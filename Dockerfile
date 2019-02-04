@@ -3,6 +3,7 @@ MAINTAINER bsamadi@nubonetics.com
 RUN apt-get update
 RUN apt-get install -y snapd
 RUN apt-get install -y apt-utils curl gnupg2 git
+RUN systemctl status snapd
 RUN snap version
 RUN snap find hugo
 RUN snap install hugo

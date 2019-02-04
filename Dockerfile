@@ -6,6 +6,4 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt -y install nodejs
 RUN npm install -g postcss-cli
 RUN npm install -g autoprefixer
-RUN git clone https://github.com/gohugoio/hugo.git
-RUN cd hugo
-RUN go install --tags extended
+RUN go get --tags extended  github.com/spf13/hugo

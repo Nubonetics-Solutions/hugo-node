@@ -1,4 +1,4 @@
-FROM publysher:docker-hugo
+FROM publysher/hugo
 MAINTAINER bsamadi@nubonetics.com
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -

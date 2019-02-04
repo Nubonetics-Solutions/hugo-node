@@ -1,7 +1,7 @@
 FROM golang
 MAINTAINER bsamadi@nubonetics.com
 RUN apt update
-RUN go get github.com/spf13/hugo/tree/release-0.54.0 --tags extended
+RUN go get github.com/spf13/hugo --tags extended
 RUN apt install -y apt-utils curl gnupg2 git
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt -y install nodejs

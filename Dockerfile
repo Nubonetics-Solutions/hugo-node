@@ -1,11 +1,7 @@
-FROM ubuntu
+FROM registry.gitlab.com/pages/hugo:latest
 MAINTAINER bsamadi@nubonetics.com
-ENV SNAPCRAFT_SETUP_CORE 1
 RUN apt-get update
-RUN apt-get install -y apt-utils curl gnupg2 git snapcraft
-RUN snap version
-RUN snap find hugo
-RUN snap install hugo
+RUN apt-get install -y apt-utils curl gnupg2 git
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get -y install nodejs
 RUN npm install -g postcss-cli

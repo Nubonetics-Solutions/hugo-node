@@ -1,5 +1,6 @@
 FROM snapcore/snapcraft
 MAINTAINER bsamadi@nubonetics.com
+ENV SNAPCRAFT_SETUP_CORE 1
 RUN apt-get update
 RUN apt-get install -y snapd
 RUN apt-get install -y apt-utils curl gnupg2 git

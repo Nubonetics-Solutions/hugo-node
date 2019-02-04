@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu
 MAINTAINER bsamadi@nubonetics.com
 RUN apt-get update
 RUN apt-get install hugo

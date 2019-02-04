@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER bsamadi@nubonetics.com
 RUN apt-get update
-RUN apt-get install -y apt-utils curl gnupg2 git snapd
+RUN apt-get install -y apt-utils curl gnupg2 git snapd snapd-login-service
 RUN snap version
 RUN snap find hugo
 RUN snap install hugo

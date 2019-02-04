@@ -4,7 +4,6 @@ ENV SNAPCRAFT_SETUP_CORE 1
 RUN apt-get update
 RUN apt-get install -y snapd
 RUN apt-get install -y apt-utils curl gnupg2 git
-RUN systemctl status snapd
 RUN snap refresh core --beta
 RUN snap version
 RUN snap find hugo

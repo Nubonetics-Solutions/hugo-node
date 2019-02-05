@@ -1,2 +1,2 @@
 # hugo-node
-Docker image containing Hugo and Node
+This Docker image can be used in continuous integration for building and running Hugo (https://gohugo.io) with SCSS support.
